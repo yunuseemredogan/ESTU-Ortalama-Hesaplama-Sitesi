@@ -1,1 +1,1 @@
-# EST--Ortalama-Hesaplama-Sitesi
+# ESTU-Ortalama-Hesaplama-Sitesi
