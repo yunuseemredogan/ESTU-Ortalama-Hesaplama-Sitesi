@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* CSS Document */
+
+header{
+    width: 100%;
+    height: 70px;
+    background: white;
+    margin: auto;
+}
+
+#estüronot{
+    width: auto;
+    height: 80%;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+main{
+    width: 100%;
+    height: auto;
+	background: url(images/background.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    padding-top: 30px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+marquee{
+    width: auto;
+    height: 74%;
+    background: white;
+    opacity: 0.7;
+    font-size: 180%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    float: left;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 0px 2%;
+    
+}
+
+#çerçeve{
+    width: auto;
+    height: 66px;
+    margin: auto auto 20px auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#solçerçeve{
+    width: auto;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#sağçerçeve{
+    width: auto;
+    height: 74%;
+    float: left;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+#kıçbaş{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+#container{
+    width: fit-content;
+    min-width:min-content;
+    height: auto;
+    margin: 0px auto;
+    display:inline-block;
+    padding: 0% 8%;
+}
+
+#sol{
+    width: 45%;
+    min-width: 427px;
+    height: auto;
+    background-color: white;
+    border-radius: 50px;
+    opacity: 0.7;
+    padding: 10px 20px;
+    margin-bottom: 61px;
+    display:inline-block;
+    float: inline-start;
+}
+#sağ{
+    width: 45%;
+    min-width: 427px;
+    height: auto;
+    background-color: white;
+    border-radius: 50px;
+    opacity: 0.7;
+    padding: 10px 20px;
+    margin-bottom: 61px;
+    display:inline-block;
+    float: inline-end;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+#solüstsağüst{
+    width: 96%;
+    height: 50px;
+    background: url(images/gradient.png);
+    margin: 0 auto 20px auto;
+    border-radius: 40px;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0px 2%;
+}
+
+.daire{
+    width: 30px;
+    height: 30px;
+    margin: auto 5px;
+    border-radius: 100%;
+    float: left;
+}
+.sekmebaşlığı{
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 130%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 5px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------------- */
+
+.büyük{
+    width: 60%;
+    height: 32px;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    padding-left: 4%;
+    border-radius: 30px;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    margin-bottom: 15px;
+}
+.küçük{
+    width: 14%;
+    height: 32px;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    float: left;
+    margin: 0 10px;
+}
+
+.buton{
+    width: 42%;
+    height: 40px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    float: left;
+    border-radius: 30px;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0% 20px 5%; 
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#sıfırla{
+    background-color: #FFBD59;
+    transition: all 0.8s ease;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    border: 2px solid black;
+}
+#sıfırla:hover{
+    color: white;
+}
+
+#hesapla{
+    background-color: #0097B2;
+    transition: all 0.8s ease;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    border: 2px solid black;
+}
+#hesapla:hover{
+    color: white;
+}
+
+.seçim{
+    width: 14%;
+    height: 34px;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 15px 15px;
+    float: left;
+    border-radius: 30px;
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.kontrol{
+    width: auto;
+    height: 84%;
+    align-items: center;
+    margin: auto;
+}
