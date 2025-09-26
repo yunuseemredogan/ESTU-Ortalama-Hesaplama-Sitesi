@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTÜRONOT</title>
+    <link rel="stylesheet" href="stil.css">
+    <link rel="shortcut icon" type="image/png" href="images/ESTÜ.png"/>
+    <script src="print.js"></script>
+</head>
+<body onload="showElements()">
+    <header align="center"><a href=""><img id="estüronot" src="images/estüronot.png" alt="estüronot"></a></header>
+    <main>
+        <div id="çerçeve">
+            <div id="solçerçeve"><img id="kıçbaş" src="images/sol.png" alt="estüronot"></div>
+            <marquee direction="left" scrollamount="14">Eskişehir Teknik Üniversitesi öğrencileri not ortalamalarını burada hesaplıyorr..</marquee>
+            <div id="sağçerçeve"><img id="kıçbaş" src="images/sağ.png" alt="estüronot"></div>
+        </div>
+        <div id="container">
+            <div id="sol">
+                <div id="solüstsağüst">
+                    <div class="daire" style="background-color: red;"></div>
+                    <div class="daire" style="background-color: orange;"></div>
+                    <div class="daire" style="background-color: #191A29;"></div>
+                    <div class="sekmebaşlığı"><b>Dönem Ortalaması</b></div>
+                </div>
+                <div class="kontrol">
+                    <div id="special">
+                        <div class="büyük" style="width: 60.5%; height: 32px; font-size: 100%;"><b>Bu dönem alınan ders sayısı: </b></div>
+                        <select id="input" class="seçim" name="sayılar" onchange="showElements()">
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
+                            <option value=7>7</option>
+                            <option value=8>8</option>
+                            <option value=9>9</option>
+                            <option value=10>10</option>
+                            <option value=11>11</option>
+                            <option value=12>12</option>
+                        </select>
+                    </div>
+                        <div class="büyük" style="width: 60.5%; height: 32px; justify-content: center; margin-right: 13px; font-size: 100%;"><b>Dersin adı</b></div>
+                        <div class="küçük" style="width: 14%; min-width: 50px; height: 32px; justify-content: center; margin: 0 12.5px 13px 0; font-size: 100%;"><b>Kredi</b></div>
+                        <div class="küçük" style="width: 14%; min-width: 50px; height: 32px; justify-content: center; margin: 0 0 13px 0; font-size: 100%;"><b>Harf</b></div>
+                        <input type="text" class="büyük" id="ders1" placeholder="1. Ders: " style="font-weight: bold;">
+                        <select id="kredi1" class="seçim">
+                            <option value=1.5>1.5</option>
+                            <option value=2>2</option>
+                            <option value=2.5>2.5</option>
+                            <option value=3>3</option>
+                            <option value=3.5>3.5</option>
+                            <option value=4>4</option>
+                            <option value=4.5>4.5</option>
+                            <option value=5>5</option>
+                            <option value=5.5>5.5</option>
+                            <option value=6>6</option>
+                            <option value=6.5>6.5</option>
+                            <option value=7>7</option>
+                            <option value=7.5>7.5</option>
+                            <option value=8>8</option>
+                        </select>
+                        <select id="harf1" class="seçim">
+                            <option value=4>AA</option>
+                            <option value=3.7>AB</option>
+                            <option value=3.3>BA</option>
+                            <option value=3>BB</option>
+                            <option value=2.7>BC</option>
+                            <option value=2.3>CB</option>
+                            <option value=2>CC</option>
+                            <option value=1.7>CD</option>
+                            <option value=1.3>DC</option>
+                            <option value=1>DD</option>
+                            <option value=0>FF</option>
+                        </select>
+                        <input type="text" class="büyük" id="ders2" placeholder="2. Ders: " style="font-weight: bold;">
+                        <select id="kredi2" class="seçim">
+                            <option value=1.5>1.5</option>
+                            <option value=2>2</option>
+                            <option value=2.5>2.5</option>
+                            <option value=3>3</option>
+                            <option value=3.5>3.5</option>
+                            <option value=4>4</option>
+                            <option value=4.5>4.5</option>
+                            <option value=5>5</option>
+                            <option value=5.5>5.5</option>
+                            <option value=6>6</option>
+                            <option value=6.5>6.5</option>
+                            <option value=7>7</option>
+                            <option value=7.5>7.5</option>
+                            <option value=8>8</option>
+                        </select>
+                        <select id="harf2" class="seçim">
+                            <option value=4>AA</option>
+                            <option value=3.7>AB</option>
+                            <option value=3.3>BA</option>
+                            <option value=3>BB</option>
+                            <option value=2.7>BC</option>
+                            <option value=2.3>CB</option>
+                            <option value=2>CC</option>
+                            <option value=1.7>CD</option>
+                            <option value=1.3>DC</option>
+                            <option value=1>DD</option>
+                            <option value=0>FF</option>
+                        </select>
+                        <input type="text" class="büyük" id="ders3" placeholder="3. Ders: " style="font-weight: bold;">
+                        <select id="kredi3" class="seçim">
+                            <option value=1.5>1.5</option>
+                            <option value=2>2</option>
+                            <option value=2.5>2.5</option>
+                            <option value=3>3</option>
+                            <option value=3.5>3.5</option>
+                            <option value=4>4</option>
+                            <option value=4.5>4.5</option>
+                            <option value=5>5</option>
+                            <option value=5.5>5.5</option>
+                            <option value=6>6</option>
+                            <option value=6.5>6.5</option>
+                            <option value=7>7</option>
+                            <option value=7.5>7.5</option>
+                            <option value=8>8</option>
+                        </select>
+                        <select id="harf3" class="seçim">
+                            <option value=4>AA</option>
+                            <option value=3.7>AB</option>
+                            <option value=3.3>BA</option>
+                            <option value=3>BB</option>
+                            <option value=2.7>BC</option>
+                            <option value=2.3>CB</option>
+                            <option value=2>CC</option>
+                            <option value=1.7>CD</option>
+                            <option value=1.3>DC</option>
+                            <option value=1>DD</option>
+                            <option value=0>FF</option>
+                        </select>
+                        <input type="text" class="büyük" id="ders4" placeholder="4. Ders: " style="font-weight: bold;">
+                        <select id="kredi4" class="seçim">
+                            <option value=1.5>1.5</option>
+                            <option value=2>2</option>
+                            <option value=2.5>2.5</option>
+                            <option value=3>3</option>
+                            <option value=3.5>3.5</option>
+                            <option value=4>4</option>
+                            <option value=4.5>4.5</option>
+                            <option value=5>5</option>
+                            <option value=5.5>5.5</option>
+                            <option value=6>6</option>
+                            <option value=6.5>6.5</option>
+                            <option value=7>7</option>
+                            <option value=7.5>7.5</option>
+                            <option value=8>8</option>
+                        </select>
+                        <select id="harf4" class="seçim">
+                            <option value=4>AA</option>
+                            <option value=3.7>AB</option>
+                            <option value=3.3>BA</option>
+                            <option value=3>BB</option>
+                            <option value=2.7>BC</option>
+                            <option value=2.3>CB</option>
+                            <option value=2>CC</option>
+                            <option value=1.7>CD</option>
+                            <option value=1.3>DC</option>
+                            <option value=1>DD</option>
+                            <option value=0>FF</option>
+                        </select>
+                        <input type="text" class="büyük" id="ders5" placeholder="5. Ders: " style="font-weight: bold;">
+                        <select id="kredi5" class="seçim">
+                            <option value=1.5>1.5</option>
+                            <option value=2>2</option>
+                            <option value=2.5>2.5</option>
+                            <option value=3>3</option>
+                            <option value=3.5>3.5</option>
+                            <option value=4>4</option>
+                            <option value=4.5>4.5</option>
+                            <option value=5>5</option>
+                            <option value=5.5>5.5</option>
+                            <option value=6>6</option>
+                            <option value=6.5>6.5</option>
+                            <option value=7>7</option>
+                            <option value=7.5>7.5</option>
+                            <option value=8>8</option>
+                        </select>
+                        <select id="harf5" class="seçim">
+                            <option value=4>AA</option>
+                            <option value=3.7>AB</option>
+                            <option value=3.3>BA</option>
+                            <option value=3>BB</option>
+                            <option value=2.7>BC</option>
+                            <option value=2.3>CB</option>
+                            <option value=2>CC</option>
+                            <option value=1.7>CD</option>
+                            <option value=1.3>DC</option>
+                            <option value=1>DD</option>
+                            <option value=0>FF</option>
+                        </select>
+                        <input type="text" class="büyük" id="ders6" placeholder="6. Ders: " style="font-weight: bold;">
+                        <select id="kredi6" class="seçim">
+                            <option value=1.5>1.5</option>
+                            <option value=2>2</option>
+                            <option value=2.5>2.5</option>
+                            <option value=3>3</option>
+                            <option value=3.5>3.5</option>
+                            <option value=4>4</option>
+                            <option value=4.5>4.5</option>
+                            <option value=5>5</option>
+                            <option value=5.5>5.5</option>
+                            <option value=6>6</option>
+                            <option value=6.5>6.5</option>
+                            <option value=7>7</option>
+                            <option value=7.5>7.5</option>
+                            <option value=8>8</option>
+                        </select>
+                        <select id="harf6" class="seçim">
+                            <option value=4>AA</option>
+                            <option value=3.7>AB</option>
+                            <option value=3.3>BA</option>
+                            <option value=3>BB</option>
+                            <option value=2.7>BC</option>
+                            <option value=2.3>CB</option>
+                            <option value=2>CC</option>
+                            <option value=1.7>CD</option>
+                            <option value=1.3>DC</option>
+                            <option value=1>DD</option>
+                            <option value=0>FF</option>
+                        </select>
+                        <input type="text" class="büyük" id="ders7" placeholder="7. Ders: " style="font-weight: bold;">
+                        <select id="kredi7" class="seçim">
+                            <option value=1.5>1.5</option>
+                            <option value=2>2</option>
+                            <option value=2.5>2.5</option>
+                            <option value=3>3</option>
+                            <option value=3.5>3.5</option>
+                            <option value=4>4</option>
+                            <option value=4.5>4.5</option>
+                            <option value=5>5</option>
+                            <option value=5.5>5.5</option>
+                            <option value=6>6</option>
+                            <option value=6.5>6.5</option>
+                            <option value=7>7</option>
+                            <option value=7.5>7.5</option>
+                            <option value=8>8</option>
+                        </select>
+                        <select id="harf7" class="seçim">
+                            <option value=4>AA</option>
+                            <option value=3.7>AB</option>
+                            <option value=3.3>BA</option>
+                            <option value=3>BB</option>
+                            <option value=2.7>BC</option>
+                            <option value=2.3>CB</option>
+                            <option value=2>CC</option>
+                            <option value=1.7>CD</option>
+                            <option value=1.3>DC</option>
+                            <option value=1>DD</option>
+                            <option value=0>FF</option>
+                        </select>
+                        <input type="text" class="büyük" id="ders8" placeholder="8. Ders: " style="font-weight: bold;">
+                        <select id="kredi8" class="seçim">
+                            <option value=1.5>1.5</option>
+                            <option value=2>2</option>
+                            <option value=2.5>2.5</option>
+                            <option value=3>3</option>
+                            <option value=3.5>3.5</option>
+                            <option value=4>4</option>
+                            <option value=4.5>4.5</option>
+                            <option value=5>5</option>
+                            <option value=5.5>5.5</option>
+                            <option value=6>6</option>
+                            <option value=6.5>6.5</option>
+                            <option value=7>7</option>
+                            <option value=7.5>7.5</option>
+                            <option value=8>8</option>
+                        </select>
+                        <select id="harf8" class="seçim">
+                            <option value=4>AA</option>
+                            <option value=3.7>AB</option>
+                            <option value=3.3>BA</option>
+                            <option value=3>BB</option>
+                            <option value=2.7>BC</option>
+                            <option value=2.3>CB</option>
+                            <option value=2>CC</option>
+                            <option value=1.7>CD</option>
+                            <option value=1.3>DC</option>
+                            <option value=1>DD</option>
+                            <option value=0>FF</option>
+                        </select>
+                        <input type="text" class="büyük" id="ders9" placeholder="9. Ders: " style="font-weight: bold;">
+                        <select id="kredi9" class="seçim">
+                            <option value=1.5>1.5</option>
+                            <option value=2>2</option>
+                            <option value=2.5>2.5</option>
+                            <option value=3>3</option>
+                            <option value=3.5>3.5</option>
+                            <option value=4>4</option>
+                            <option value=4.5>4.5</option>
+                            <option value=5>5</option>
+                            <option value=5.5>5.5</option>
+                            <option value=6>6</option>
+                            <option value=6.5>6.5</option>
+                            <option value=7>7</option>
+                            <option value=7.5>7.5</option>
+                            <option value=8>8</option>
+                        </select>
+                        <select id="harf9" class="seçim">
+                            <option value=4>AA</option>
+                            <option value=3.7>AB</option>
+                            <option value=3.3>BA</option>
+                            <option value=3>BB</option>
+                            <option value=2.7>BC</option>
+                            <option value=2.3>CB</option>
+                            <option value=2>CC</option>
+                            <option value=1.7>CD</option>
+                            <option value=1.3>DC</option>
+                            <option value=1>DD</option>
+                            <option value=0>FF</option>
+                        </select>
+                        <input type="text" class="büyük" id="ders10" placeholder="10. Ders: " style="font-weight: bold;">
+                        <select id="kredi10" class="seçim">
+                            <option value=1.5>1.5</option>
+                            <option value=2>2</option>
+                            <option value=2.5>2.5</option>
+                            <option value=3>3</option>
+                            <option value=3.5>3.5</option>
+                            <option value=4>4</option>
+                            <option value=4.5>4.5</option>
+                            <option value=5>5</option>
+                            <option value=5.5>5.5</option>
+                            <option value=6>6</option>
+                            <option value=6.5>6.5</option>
+                            <option value=7>7</option>
+                            <option value=7.5>7.5</option>
+                            <option value=8>8</option>
+                        </select>
+                        <select id="harf10" class="seçim">
+                            <option value=4>AA</option>
+                            <option value=3.7>AB</option>
+                            <option value=3.3>BA</option>
+                            <option value=3>BB</option>
+                            <option value=2.7>BC</option>
+                            <option value=2.3>CB</option>
+                            <option value=2>CC</option>
+                            <option value=1.7>CD</option>
+                            <option value=1.3>DC</option>
+                            <option value=1>DD</option>
+                            <option value=0>FF</option>
+                        </select>
+                        <input type="text" class="büyük" id="ders11" placeholder="11. Ders: " style="font-weight: bold;">
+                        <select id="kredi11" class="seçim">
+                            <option value=1.5>1.5</option>
+                            <option value=2>2</option>
+                            <option value=2.5>2.5</option>
+                            <option value=3>3</option>
+                            <option value=3.5>3.5</option>
+                            <option value=4>4</option>
+                            <option value=4.5>4.5</option>
+                            <option value=5>5</option>
+                            <option value=5.5>5.5</option>
+                            <option value=6>6</option>
+                            <option value=6.5>6.5</option>
+                            <option value=7>7</option>
+                            <option value=7.5>7.5</option>
+                            <option value=8>8</option>
+                        </select>
+                        <select id="harf11" class="seçim">
+                            <option value=4>AA</option>
+                            <option value=3.7>AB</option>
+                            <option value=3.3>BA</option>
+                            <option value=3>BB</option>
+                            <option value=2.7>BC</option>
+                            <option value=2.3>CB</option>
+                            <option value=2>CC</option>
+                            <option value=1.7>CD</option>
+                            <option value=1.3>DC</option>
+                            <option value=1>DD</option>
+                            <option value=0>FF</option>
+                        </select>
+                        <input type="text" class="büyük" id="ders12" placeholder="12. Ders: " style="font-weight: bold;">
+                        <select id="kredi12" class="seçim">
+                            <option value=1.5>1.5</option>
+                            <option value=2>2</option>
+                            <option value=2.5>2.5</option>
+                            <option value=3>3</option>
+                            <option value=3.5>3.5</option>
+                            <option value=4>4</option>
+                            <option value=4.5>4.5</option>
+                            <option value=5>5</option>
+                            <option value=5.5>5.5</option>
+                            <option value=6>6</option>
+                            <option value=6.5>6.5</option>
+                            <option value=7>7</option>
+                            <option value=7.5>7.5</option>
+                            <option value=8>8</option>
+                        </select>
+                        <select id="harf12" class="seçim">
+                            <option value=4>AA</option>
+                            <option value=3.7>AB</option>
+                            <option value=3.3>BA</option>
+                            <option value=3>BB</option>
+                            <option value=2.7>BC</option>
+                            <option value=2.3>CB</option>
+                            <option value=2>CC</option>
+                            <option value=1.7>CD</option>
+                            <option value=1.3>DC</option>
+                            <option value=1>DD</option>
+                            <option value=0>FF</option>
+                        </select>
+                    <input type="reset" class="buton" id="sıfırla" value="Sıfırla" onclick="sıfırla1()">
+                    <input type="button" class="buton" id="hesapla" value="Hesapla" onclick="hesapla1()">
+                    <div class="büyük" style="width: 60.5%; font-size: 100%;"><b>Bu dönemki ortalamanız: </b></div>
+                    <div class="küçük" id="dönemsonuç" style="width: 13%; height: 32px; margin-left: 3.5%;"></div>
+                </div>
+                </div>
+            <div id="sağ">
+                <div id="solüstsağüst">
+                    <div class="daire" style="background-color: red;"></div>
+                    <div class="daire" style="background-color: orange;"></div>
+                    <div class="daire" style="background-color: #191A29;"></div>
+                    <div class="sekmebaşlığı"><b>Genel Ortalama</b></div>
+                </div>
+                <div class="kontrol">
+                    <div class="büyük"><b>Öncesinde alınan kredi sayısı: </b></div>
+                    <input type="text" class="küçük" id="öncekiKredi" value=0>
+                    <div class="büyük"><b>Öncesindeki genel ortalama: </b></div>
+                    <input type="text" class="küçük" id="genelOrtalama" value=0>
+                    <div class="büyük"><b>Bu dönem alınan kredi sayısı: </b></div>
+                    <input type="text" class="küçük" id="sonrakiKredi" value=0>
+                    <div class="büyük"><b>Bu dönemki ortalama: </b></div>
+                    <input type="text" class="küçük" id="dönemOrtalama" value=0>
+                    <input type="reset" class="buton" id="sıfırla" value="Sıfırla" onclick="sıfırla2()">
+                    <input type="button" class="buton" id="hesapla" value="Hesapla" onclick="hesapla2()">
+                    <div class="büyük"><b>Şu anki genel ortalamanız: </b></div>
+                    <div class="küçük" id="genelsonuç"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
