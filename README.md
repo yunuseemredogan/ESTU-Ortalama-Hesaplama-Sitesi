@@ -1,6 +1,6 @@
 # ESTÜRONOT - Ortalama Hesaplama Sitesi 🚀
 
-![Project Banner](https://github.com/username/esturonot/blob/main/screenshots/esturonot-banner.png)
+![Project Banner](https://github.com/username/esturonot/blob/main/screenshots/estüronot.png)
 
 ## 📖 Genel Bakış
 ESTÜRONOT, Eskişehir Teknik Üniversitesi öğrencileri için geliştirilmiş, uzay temalı bir ortalama hesaplama sitesidir. Bu web uygulaması, öğrencilerin ders notlarını girerek dönem ortalamalarını ve genel not ortalamalarını (GNO) kolayca hesaplamalarına olanak tanır. Kullanıcı dostu arayüzü ve uzay temalı tasarımı ile hem işlevsel hem de eğlenceli bir deneyim sunar. 🌌
@@ -39,7 +39,7 @@ Projeyi yerel makinenizde çalıştırmak veya GitHub'da paylaşmak için aşağ
 
 1. **Depoyu Klonlayın**:
    ```bash
-   git clone https://github.com/username/esturonot.git
+   git clone https://github.com/yunuseemredogan/ESTU-Ortalama-Hesaplama-Sitesi.git
    cd esturonot
    ```
    Bu, projenin tüm dosyalarını (HTML, CSS, JavaScript) indirir.
