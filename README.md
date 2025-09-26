@@ -62,7 +62,7 @@ Uygulamayı çalıştırmak oldukça basittir:
 
 2. **Ders Ekleme**:
    - "Ders Ekle" butonuna tıklayarak yeni bir ders girişi oluşturun.
-   - Ders adı, not (0-100 arası) ve kredi (ör. 3) bilgilerini girin.
+   - Ders adı, harf notu (AA-FF arası) ve kredi (ör. 3) bilgilerini girin.
 
 3. **Ortalama Hesaplama**:
    - Tüm dersleri girdikten sonra "Hesapla" butonuna tıklayın.
@@ -96,7 +96,7 @@ Görsel Güncellemeler                    Yerel Depolama              Hata Mesaj
 
 2. **Ders Girişi**:
    - Kullanıcı, ders adı, not ve kredi bilgilerini forma girer.
-   - JavaScript, her girişi doğrular (örn. not 0-100 arasında olmalı).
+   - JavaScript, her girişi doğrular (örn. harf notu AA-FF arasında olmalı).
 
 3. **Hesaplama**:
    - Ağırlıklı ortalama formülü: `(Σ(not * kredi)) / Σ(kredi)`.
@@ -107,7 +107,7 @@ Görsel Güncellemeler                    Yerel Depolama              Hata Mesaj
    - Kullanıcı siteyi tekrar açtığında veriler geri yüklenir.
 
 5. **Hata Yönetimi**:
-   - Geçersiz girişler için uyarı mesajları gösterilir (örn. "Not 0-100 arasında olmalı").
+   - Geçersiz girişler için uyarı mesajları gösterilir (örn. "Harf notu AA-FF arasında olmalı").
 
 ## 🧱 Kod Yapısı
 Proje, basitlik için tek bir HTML dosyası ve ek JavaScript/CSS dosyalarından oluşur:
