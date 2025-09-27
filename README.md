@@ -113,8 +113,8 @@ Görsel Güncellemeler                    Yerel Depolama              Hata Mesaj
 Proje, basitlik için tek bir HTML dosyası ve ek JavaScript/CSS dosyalarından oluşur:
 
 - **index.html**: Ana sayfa, Tailwind CSS ve JavaScript dosyalarını içerir.
-- **styles.css**: Uzay temalı özelleştirmeler (isteğe bağlı, Tailwind ile inline stil kullanılabilir).
-- **script.js**: Ders yönetimi, hesaplama ve yerel depolama mantığı.
+- **still.css**: Uzay temalı özelleştirmeler (isteğe bağlı, Tailwind ile inline stil kullanılabilir).
+- **print.js**: Ders yönetimi, hesaplama ve yerel depolama mantığı.
 - **Toplam Satır**: Yaklaşık 200-300, açıklayıcı yorumlarla birlikte.
 
 ## ⚠️ Sorun Giderme
