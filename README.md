@@ -1,6 +1,6 @@
 # ESTÜRONOT - Ortalama Hesaplama Sitesi 🚀
 
-![Project Banner](https://github.com/yunuseemredogan/screenshots-.gitkeep/blob/main/estüronot.png)
+<img width="1919" height="968" alt="estüronot" src="https://github.com/user-attachments/assets/afa80ef1-b293-4970-9523-a3908080d25f" />
 
 ## 📖 Genel Bakış
 ESTÜRONOT, Eskişehir Teknik Üniversitesi öğrencileri için geliştirilmiş, uzay temalı bir ortalama hesaplama sitesidir. Bu web uygulaması, öğrencilerin ders notlarını girerek dönem ortalamalarını ve genel not ortalamalarını (GNO) kolayca hesaplamalarına olanak tanır. Kullanıcı dostu arayüzü ve uzay temalı tasarımı ile hem işlevsel hem de eğlenceli bir deneyim sunar. 🌌
