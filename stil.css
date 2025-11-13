@@ -91,7 +91,7 @@ marquee{
 
 #sol{
     width: 45%;
-    min-width: 360px;
+    min-width: 350px;
     height: auto;
     background-color: white;
     border-radius: 50px;
@@ -103,7 +103,7 @@ marquee{
 }
 #sağ{
     width: 45%;
-    min-width: 360px;
+    min-width: 350px;
     height: auto;
     background-color: white;
     border-radius: 50px;
@@ -242,4 +242,5 @@ marquee{
     align-items: center;
     margin: auto;
 }
+
 
