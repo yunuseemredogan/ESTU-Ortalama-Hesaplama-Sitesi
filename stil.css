@@ -9,7 +9,7 @@ header{
 }
 
 #estüronot{
-    width: auto;
+    width: 30%;
     height: 80%;
 }
 
@@ -242,3 +242,4 @@ marquee{
     align-items: center;
     margin: auto;
 }
+
