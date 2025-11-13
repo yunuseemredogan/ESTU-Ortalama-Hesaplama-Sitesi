@@ -80,7 +80,7 @@ marquee{
 
 #container{
     width: fit-content;
-    min-width:min-content;
+    /*min-width:min-content;*/
     height: auto;
     margin: 0px auto;
     display:inline-block;
@@ -91,7 +91,7 @@ marquee{
 
 #sol{
     width: 45%;
-    min-width: 350px;
+    min-width: 320px;
     height: auto;
     background-color: white;
     border-radius: 50px;
@@ -103,7 +103,7 @@ marquee{
 }
 #sağ{
     width: 45%;
-    min-width: 350px;
+    min-width: 320px;
     height: auto;
     background-color: white;
     border-radius: 50px;
@@ -242,5 +242,3 @@ marquee{
     align-items: center;
     margin: auto;
 }
-
-
