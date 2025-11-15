@@ -85,9 +85,9 @@ marquee{
     flex-wrap: wrap;           /* Küçülünce alt alta geçsin */
     justify-content: center;   /* Büyük ekranda ortalı, küçükte her biri ortalı */
     gap: 20px;                 /* Aralarında boşluk */
-    padding: 20px 20px 95px 20px;
+    padding: 20px 20px 85px 20px;
     max-width: 90%;
-    margin: 20px auto 0 auto;
+    margin: 0 auto;
 }
 
 /* Ortak stiller */
@@ -101,6 +101,7 @@ marquee{
     padding: 10px 20px;
     box-sizing: border-box;
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 /* Sağ div için özel padding */
