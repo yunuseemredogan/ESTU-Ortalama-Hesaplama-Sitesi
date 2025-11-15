@@ -58,7 +58,7 @@ function hesapla2() {
     var b = dönemOrtalama.value.trim();
 
     if (!isFinite(x) || !isFinite(a) || !isFinite(y) || !isFinite(b)) {
-        document.getElementById("genelsonuç").innerHTML = "NaN";
+        document.getElementById("genelsonuç").innerHTML = "HATA";
         return;
     }
 
@@ -106,3 +106,4 @@ function showElements() {
         }
     }
 }
+
