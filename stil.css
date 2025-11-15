@@ -24,7 +24,7 @@ main{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-    padding-top: 50px;
+    padding-top: 3.5%;
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------- */
@@ -47,7 +47,7 @@ marquee{
 #çerçeve{
     width: auto;
     height: 66px;
-    margin: auto auto 10px auto;
+    margin: auto auto 0.5% auto;
     display: flex;
     justify-content:center;
     align-items: center;
