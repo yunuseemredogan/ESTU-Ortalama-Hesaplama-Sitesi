@@ -21,10 +21,10 @@ function sıfırla1(){
 }
 
 function sıfırla2(){
-    document.getElementById("öncekiKredi").value = 0;
-    document.getElementById("genelOrtalama").value = 0;
-    document.getElementById("sonrakiKredi").value = 0;
-    document.getElementById("dönemOrtalama").value = 0;
+    document.getElementById("öncekiKredi").value = 0.00;
+    document.getElementById("genelOrtalama").value = 0.00;
+    document.getElementById("sonrakiKredi").value = 0.00;
+    document.getElementById("dönemOrtalama").value = 0.00;
     document.getElementById("genelsonuç").innerHTML = "";
 }
 
@@ -106,4 +106,3 @@ function showElements() {
         }
     }
 }
-
