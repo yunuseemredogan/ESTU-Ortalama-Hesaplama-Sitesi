@@ -21,10 +21,10 @@ function sıfırla1(){
 }
 
 function sıfırla2(){
-    document.getElementById("öncekiKredi").value = 0.00;
-    document.getElementById("genelOrtalama").value = 0.00;
-    document.getElementById("sonrakiKredi").value = 0.00;
-    document.getElementById("dönemOrtalama").value = 0.00;
+    document.getElementById("öncekiKredi").value = "0.00";
+    document.getElementById("genelOrtalama").value = "0.00";
+    document.getElementById("sonrakiKredi").value = "0.00";
+    document.getElementById("dönemOrtalama").value = "0.00";
     document.getElementById("genelsonuç").innerHTML = "";
 }
 
@@ -47,31 +47,24 @@ function hesapla1(){
 }
 
 function hesapla2() {
-    var öncekiKredi = document.getElementById("öncekiKredi");
-    var genelOrtalama = document.getElementById("genelOrtalama");
-    var sonrakiKredi = document.getElementById("sonrakiKredi");
-    var dönemOrtalama = document.getElementById("dönemOrtalama");
+    const ids = ["öncekiKredi", "genelOrtalama", "sonrakiKredi", "dönemOrtalama"];
+    const values = ids.map(id => document.getElementById(id).value.trim());
 
-    var x = öncekiKredi.value.trim();
-    var a = genelOrtalama.value.trim();
-    var y = sonrakiKredi.value.trim();
-    var b = dönemOrtalama.value.trim();
-
-    if (!isFinite(x) || !isFinite(a) || !isFinite(y) || !isFinite(b)) {
+    if (values.some(v => !isFinite(v))) {
         document.getElementById("genelsonuç").innerHTML = "HATA";
         return;
     }
 
-    x = parseFloat(x);
-    a = parseFloat(a);
-    y = parseFloat(y);
-    b = parseFloat(b);
+    const [x, a, y, b] = values.map(parseFloat);
+    const pay = x * a + y * b;
+    const payda = x + y;
 
-    var pay = x * a + y * b;
-    var payda = x + y;
+    if (payda === 0) {
+        document.getElementById("genelsonuç").innerHTML = "HATA";
+        return;
+    }
 
-    var sonuç = (payda === 0) ? 0 : pay / payda;
-
+    const sonuç = pay / payda;
     document.getElementById("genelsonuç").innerHTML = sonuç.toFixed(2);
 }
 
