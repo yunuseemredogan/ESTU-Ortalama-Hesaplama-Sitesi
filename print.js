@@ -46,20 +46,33 @@ function hesapla1(){
     document.getElementById("dönemsonuç").innerHTML = parseFloat((toplampuan/toplamkredi).toFixed(2));
 }
 
-function hesapla2(){
+function hesapla2() {
     var öncekiKredi = document.getElementById("öncekiKredi");
     var genelOrtalama = document.getElementById("genelOrtalama");
     var sonrakiKredi = document.getElementById("sonrakiKredi");
     var dönemOrtalama = document.getElementById("dönemOrtalama");
 
-    var x = parseFloat(öncekiKredi.value);
-    var a = parseFloat(genelOrtalama.value);
-    var y = parseFloat(sonrakiKredi.value);
-    var b = parseFloat(dönemOrtalama.value);
+    var x = öncekiKredi.value.trim();
+    var a = genelOrtalama.value.trim();
+    var y = sonrakiKredi.value.trim();
+    var b = dönemOrtalama.value.trim();
 
-    var sonuç = ((x*a+y*b)/(x+y));
-    
-    document.getElementById("genelsonuç").innerHTML = parseFloat(sonuç.toFixed(2));
+    if (!isFinite(x) || !isFinite(a) || !isFinite(y) || !isFinite(b)) {
+        document.getElementById("genelsonuç").innerHTML = "NaN";
+        return;
+    }
+
+    x = parseFloat(x);
+    a = parseFloat(a);
+    y = parseFloat(y);
+    b = parseFloat(b);
+
+    var pay = x * a + y * b;
+    var payda = x + y;
+
+    var sonuç = (payda === 0) ? 0 : pay / payda;
+
+    document.getElementById("genelsonuç").innerHTML = sonuç.toFixed(2);
 }
 
 function showElements() {
@@ -93,5 +106,3 @@ function showElements() {
         }
     }
 }
-
-
