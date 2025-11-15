@@ -107,6 +107,7 @@ marquee{
 /* Sağ div için özel padding */
 #sağ {
     padding: 10px 20px 12px 20px;
+    max-height: 405px;
 }
 
 /* Küçük ekranlarda her div tam ortalı olsun */
