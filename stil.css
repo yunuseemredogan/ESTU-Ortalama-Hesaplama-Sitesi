@@ -40,8 +40,7 @@ marquee{
     display: flex;
     justify-content:center;
     align-items: center;
-    padding: 0px 2%;
-    
+    padding: 0px 2%; 
 }
 
 #çerçeve{
@@ -79,20 +78,18 @@ marquee{
 
 /* --------------------------------------------------------------------------------------------------------------------------------- */
 
-/* Ana container (sol ve sağ div'leri saran) */
 #container {
     display: flex;
-    flex-wrap: wrap;           /* Küçülünce alt alta geçsin */
-    justify-content: center;   /* Büyük ekranda ortalı, küçükte her biri ortalı */
-    gap: 20px;                 /* Aralarında boşluk */
+    flex-wrap: wrap;         
+    justify-content: center;  
+    gap: 20px;             
     padding: 20px 20px 75px 20px;
     max-width: 90%;
     margin: 0 auto;
 }
 
-/* Ortak stiller */
 #sol, #sağ {
-    flex: 1 1 325px;           /* Esnek büyüme, min 325px */
+    flex: 1 1 325px;           
     min-width: 340px;
     max-width: 80%;
     background-color: white;
@@ -104,17 +101,15 @@ marquee{
     margin-top: 20px;
 }
 
-/* Sağ div için özel padding */
 #sağ {
     padding: 10px 20px 12px 20px;
     max-height: 405px;
 }
 
-/* Küçük ekranlarda her div tam ortalı olsun */
 @media (max-width: 800px) {
     #container {
         flex-direction: column;
-        align-items: center;   /* Dikeyde ortala */
+        align-items: center; 
     }
     
     #sol, #sağ {
