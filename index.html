@@ -53,7 +53,7 @@
                 </div>
                 <div class="kontrol">
                     <div id="special">
-                        <div class="büyük" style="width: 60.5%; height: 32px; font-size: 100%;"><b>Bu dönem alınan ders sayısı: </b></div>
+                        <div class="büyük" style="width: 60.5%; height: 32px; font-size: 95%;"><b>Bu dönemki ders sayısı: </b></div>
                         <select id="input" class="seçim" name="sayılar" onchange="showElements()">
                             <option value=2>2</option>
                             <option value=3>3</option>
@@ -68,9 +68,9 @@
                             <option value=12>12</option>
                         </select>
                     </div>
-                        <div class="büyük" style="width: 60.5%; height: 32px; justify-content: center; margin-right: 2.2%; font-size: 100%; padding: 0% 2%;"><b>Dersin adı</b></div>
-                        <div class="küçük" style="width: 14%; height: 32px; justify-content: center; margin: 0 2.2% 0 0; font-size: 100%;"><b>Kredi</b></div>
-                        <div class="küçük" style="width: 14%; height: 32px; justify-content: center; margin: 0 0 0 0; font-size: 100%;"><b>Harf</b></div>
+                        <div class="büyük" style="width: 60.5%; height: 32px; justify-content: center; margin-right: 2.2%; font-size: 95%; padding: 0% 2%;"><b>Dersin adı</b></div>
+                        <div class="küçük" style="width: 14%; height: 32px; justify-content: center; margin: 0 2.2% 0 0; font-size: 95%;"><b>Kredi</b></div>
+                        <div class="küçük" style="width: 14%; height: 32px; justify-content: center; margin: 0 0 0 0; font-size: 95%;"><b>Harf</b></div>
                         <input type="text" class="büyük" id="ders1" placeholder="1. Ders: " style="font-weight: bold;">
                         <select id="kredi1" class="seçim">
                             <option value=1.5>1.5</option>
@@ -433,8 +433,8 @@
                         </select>
                     <input type="reset" class="buton" id="sıfırla" value="Sıfırla" onclick="sıfırla1()">
                     <input type="button" class="buton" id="hesapla" value="Hesapla" onclick="hesapla1()">
-                    <div class="büyük" style="width: 60.5%; font-size: 100%;"><b>Bu dönemki ortalamanız: </b></div>
-                    <div class="küçük" id="dönemsonuç" style="width: 13%; height: 32px; margin-left: 3.5%;"></div>
+                    <div class="büyük" style="width: 60.5%; font-size: 95%;"><b>Bu dönemki ortalamanız: </b></div>
+                    <div class="küçük" id="dönemsonuç" style="width: 13%; height: 32px; margin-left: 3%;"></div>
                 </div>
                 </div>
             <div id="sağ">
@@ -445,17 +445,17 @@
                     <div class="sekmebaşlığı"><b>Genel Ortalama</b></div>
                 </div>
                 <div class="kontrol">
-                    <div class="büyük"><b>Öncesinde alınan kredi sayısı: </b></div>
+                    <div class="büyük" style="min-width: 210px;"><b>Öncesindeki kredi sayısı: </b></div>
                     <input type="text" class="küçük" id="öncekiKredi" value=0.00>
-                    <div class="büyük"><b>Öncesindeki genel ortalama: </b></div>
+                    <div class="büyük" style="min-width: 210px;"><b>Öncesindeki genel ortalama: </b></div>
                     <input type="text" class="küçük" id="genelOrtalama" value=0.00>
-                    <div class="büyük"><b>Bu dönem alınan kredi sayısı: </b></div>
+                    <div class="büyük" style="min-width: 210px;"><b>Bu dönemki kredi sayısı: </b></div>
                     <input type="text" class="küçük" id="sonrakiKredi" value=0.00>
-                    <div class="büyük"><b>Bu dönemki ortalama: </b></div>
+                    <div class="büyük" style="min-width: 210px;"><b>Bu dönemki ortalama: </b></div>
                     <input type="text" class="küçük" id="dönemOrtalama" value=0.00>
                     <input type="reset" class="buton" id="sıfırla" value="Sıfırla" onclick="sıfırla2()">
                     <input type="button" class="buton" id="hesapla" value="Hesapla" onclick="hesapla2()">
-                    <div class="büyük"><b>Şu anki genel ortalamanız: </b></div>
+                    <div class="büyük" style="min-width: 210px;"><b>Şu anki genel ortalamanız: </b></div>
                     <div class="küçük" id="genelsonuç"></div>
                 </div>
             </div>
